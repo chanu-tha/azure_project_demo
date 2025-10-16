@@ -1,0 +1,9 @@
+{
+	"name": "df-azure-project-01",
+	"location": "eastasia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "a9a345e0-cf35-4a2d-ba89-990334fa0968",
+		"tenantId": "28519456-2fb6-4ac2-88bf-825854beaf2d"
+	}
+}
