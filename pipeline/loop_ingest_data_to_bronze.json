@@ -320,6 +320,27 @@
 						}
 					]
 				}
+			},
+			{
+				"name": "Alerts",
+				"type": "WebActivity",
+				"dependsOn": [
+					{
+						"activity": "Automate_loop",
+						"dependencyConditions": [
+							"Failed",
+							"Skipped"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": []
 			}
 		],
 		"parameters": {
@@ -347,13 +368,13 @@
 					{
 						"schema": "dbo",
 						"table": "DimDate",
-						"cdc_col": "updated_at",
+						"cdc_col": "date",
 						"from_date": ""
 					},
 					{
 						"schema": "dbo",
 						"table": "FactStream",
-						"cdc_col": "updated_at",
+						"cdc_col": "stream_timestamp",
 						"from_date": ""
 					}
 				]
