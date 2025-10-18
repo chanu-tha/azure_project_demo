@@ -1,0 +1,27 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "df-azure-project-01"
+		},
+		"AzureSqlDatabase1_password": {
+			"value": ""
+		},
+		"Write_To_Datalake_accountKey": {
+			"value": ""
+		},
+		"AzureSqlDatabase1_properties_typeProperties_server": {
+			"value": "beamewe-azure-server.database.windows.net"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_database": {
+			"value": "azureproject-db"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_userName": {
+			"value": "datadamin"
+		},
+		"Write_To_Datalake_properties_typeProperties_url": {
+			"value": "https://azureskystorage001.dfs.core.windows.net/"
+		}
+	}
+}
